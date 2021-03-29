@@ -18,6 +18,16 @@ https://github.com/dockersamples/docker-swarm-visualizer
 docker run -it -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer
 
 
+docker inspect:
+root@web:~# root@web:~# docker service ls
+ID                  NAME                MODE                REPLICAS            IMAGE               PORTS
+dw5noqty39be        webapp1             replicated          6/6                 nginx:latest
+docker inspect webapp1 
+docker inspect dc74 # inspect docker ip address, default gateway, part of service
+
+
+
+
 
 
 work:

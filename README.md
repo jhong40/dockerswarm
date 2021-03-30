@@ -31,10 +31,15 @@ docker inspect webapp1
 docker inspect dc74 # inspect docker ip address, default gateway, part of service
 
 
+docker stack deploy --compose-file docker-compose.yml stackdemo
+docker stack services stackdemo
+docker stack rm stackdemo
+docker service rm registry
+docker swarm leave --force
 
 
 
 
-work:
+worker:
 docker swarm join --token SWMTKN-1-5r3ktwewh2fpj3ricvy4aaa6lxagnrpweqjdk4iuo7zkyqs51v-789fz0r6na1x5i5z4bzr6nq5v 192.168.1.213:2377
 ```

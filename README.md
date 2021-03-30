@@ -14,7 +14,8 @@ docker swarm update --autolock=true  # after init
 
 docker info # manager node, how many node
 
-https://github.com/dockersamples/docker-swarm-visualizer
+[GitHub](http://github.com)
+[swarm visualizer](https://github.com/dockersamples/docker-swarm-visualizer)
 docker run -it -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer
 
 

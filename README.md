@@ -1,6 +1,7 @@
 # dockerswarm
 
 [swarm visualizer](https://github.com/dockersamples/docker-swarm-visualizer)
+[swarm deploy stack](https://docs.docker.com/engine/swarm/stack-deploy/)
 ```
 docker run -it -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer
 ```
